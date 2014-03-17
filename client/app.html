@@ -1,0 +1,21 @@
+<head>
+  <title>meteor-test-collectionsReactivity</title>
+</head>
+
+<body>
+  {{> main}}
+</body>
+
+<template name="main">
+  <h2>List of item</h2>
+
+  <input type="button" value="Add" />
+
+  <ul>
+  {{#each list}}
+    <li>{{title}} {{from}}</li>
+  {{/each}}
+  </ul>
+
+  {{#unless list}}Aucune data{{/unless}}
+</template>
